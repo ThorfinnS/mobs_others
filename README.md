@@ -2,11 +2,12 @@
 ![Mobs Others' screenshot](screenshot.png)<br>
 **_Adds the Snow Walkers mobs, and an obsidian sword._**
 
-**Version:** 0.1.2<br>
+**Version:** 0.1.3<br>
 **Source code's license:** GPL v3.0<br>
 **Multimedia files' license:** LGPL v2.1 - CC BY-SA v4.0 International
 
 **Dependencies:** default (found in Minetest Game) mobs (Mobs Redo)<br>
+**Supported:** mobs_humans
 
 **Obsidian Sword's recipe:**
 

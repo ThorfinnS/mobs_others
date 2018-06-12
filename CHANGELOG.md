@@ -7,7 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
-	- No other features planned.
+	- Ice spiders, wraiths.
+
+
+## [0.1.3] - 2018-06-11
+## Modified
+
+	- Armours' tables moved in the random appearence function to save memory.
+
+## Added
+
+	- Support for mobs_humans
+
 
 ## [0.1.2] - 2018-05-22
 ### Modified

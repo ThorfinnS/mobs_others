@@ -22,32 +22,7 @@
 --
 
 local minetest_log_level = minetest.settings:get("debug_log_level")
-local mod_load_message = "[Mod] Mobs Others [v0.1.2] loaded."
-
-
---
--- Constants
---
-
-local ARMOUR = "mobs_others_chestplate_crystal.png" ..
-	"^" .. "mobs_others_leggings_crystal.png" ..
-	"^" .. "mobs_others_boots_crystal.png"
-
-local ARMOUR_HELMET = "mobs_others_helmet_crystal.png" ..
-	"^" .. "mobs_others_chestplate_crystal.png" ..
-	"^" .. "mobs_others_leggings_crystal.png" ..
-	"^" .. "mobs_others_boots_crystal.png"
-
-local ARMOUR_SHIELD = "mobs_others_chestplate_crystal.png" ..
-	"^" .. "mobs_others_leggings_crystal.png" ..
-	"^" .. "mobs_others_boots_crystal.png" ..
-	"^" .. "mobs_others_shield_crystal.png"
-
-local ARMOUR_HELMET_SHIELD = "mobs_others_helmet_crystal.png" ..
-	"^" .. "mobs_others_chestplate_crystal.png" ..
-	"^" .. "mobs_others_leggings_crystal.png" ..
-	"^" .. "mobs_others_boots_crystal.png" ..
-	"^" .. "mobs_others_shield_crystal.png"
+local mod_load_message = "[Mod] Mobs Others [v0.1.3] loaded."
 
 
 --
@@ -94,6 +69,26 @@ local function random_appearence()
 		"mobs_others_crystal_sword.png",
 		"mobs_others_crystal_axe.png"
 	}
+
+	local ARMOUR = "mobs_others_chestplate_crystal.png" ..
+		"^" .. "mobs_others_leggings_crystal.png" ..
+		"^" .. "mobs_others_boots_crystal.png"
+
+	local ARMOUR_HELMET = "mobs_others_helmet_crystal.png" ..
+		"^" .. "mobs_others_chestplate_crystal.png" ..
+		"^" .. "mobs_others_leggings_crystal.png" ..
+		"^" .. "mobs_others_boots_crystal.png"
+
+	local ARMOUR_SHIELD = "mobs_others_chestplate_crystal.png" ..
+		"^" .. "mobs_others_leggings_crystal.png" ..
+		"^" .. "mobs_others_boots_crystal.png" ..
+		"^" .. "mobs_others_shield_crystal.png"
+
+	local ARMOUR_HELMET_SHIELD = "mobs_others_helmet_crystal.png" ..
+		"^" .. "mobs_others_chestplate_crystal.png" ..
+		"^" .. "mobs_others_leggings_crystal.png" ..
+		"^" .. "mobs_others_boots_crystal.png" ..
+		"^" .. "mobs_others_shield_crystal.png"
 
 	local armours = {
 		ARMOUR,
@@ -170,6 +165,7 @@ mobs:register_mob("mobs_others:snow_walker", {
 	attack_animals = true,
 	group_attack = true,
 	attack_type = "dogfight",
+	specific_attack = {"player", "mobs_humans:human"},
 	blood_amount = 0,
 	pathfinding = 0,
 	immune_to = {
@@ -239,7 +235,7 @@ mobs:spawn({name = "mobs_others:snow_walker",
 	max_light = 15,
 	min_light = 0,
 	interval = 60,
-	chance = 7000,
+	chance = 3500,
 	active_object_count = 2,
 	min_height = 1,
 	max_height = 31000,
